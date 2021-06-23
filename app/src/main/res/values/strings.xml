@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Random City</string>
+    <string name="l_warsaw">Warszawa</string>
+    <string name="l_wroclaw">Wrocław</string>
+    <string name="l_bialystok">Białystok</string>
+    <string name="l_gdansk">Gdańsk</string>
+    <string name="l_poznan">Poznań</string>
+    <string name="l_katowice">Katowice</string>
+    <string name="l_cracow">Kraków</string>
+</resources>
