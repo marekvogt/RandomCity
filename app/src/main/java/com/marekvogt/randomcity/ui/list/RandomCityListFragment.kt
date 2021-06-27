@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.fragment.findNavController
 import com.marekvogt.randomcity.R
 import com.marekvogt.randomcity.databinding.FragmentRandomCityListBinding
 import com.marekvogt.randomcity.ui.common.extension.autoClearedLateinit
+import com.marekvogt.randomcity.ui.common.extension.navigateTo
 import com.marekvogt.randomcity.ui.common.extension.observeEvent
 import com.marekvogt.randomcity.ui.main.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -50,8 +50,7 @@ class RandomCityListFragment : Fragment() {
 
     private fun observeEvents() {
         viewModel.navigateToDetailsEvent.observeEvent(viewLifecycleOwner) {
-//            navigateTo(R.id.action_random_city_list_to_random_city_details)
-            findNavController().navigate(R.id.action_random_city_list_to_random_city_details)
+            navigateTo(R.id.action_random_city_list_to_random_city_details)
         }
     }
 }
